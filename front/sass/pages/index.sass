@@ -1,0 +1,106 @@
+$blue: #000055
+$dark-blue: #00003D
+$magenta: #ff267e
+$grey: #EDEDED
+$green: #05C489
+$green-hover: #05b37c
+
+$font-suisse-bold: SuisseIntl-Bold, sans-serif //700
+$font-suisse-semb: SuisseIntl-SemiBold, sans-serif //600
+$font-wulkan: WulkanDisplay, sans-serif
+
+
+body
+  img
+    max-width: 100%
+    height: auto
+
+.wrapper
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  height: 100%
+  display: flex
+.banner
+  width: 100%
+  height: 100vh
+  height: calc(var(--vh, 1vh) * 100)
+  background: $blue
+  position: relative
+  overflow: hidden
+  cursor: default
+  background: $blue url("../img/bg.jpg") no-repeat 50% 0/cover
+  padding: 360px 0 0 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__title
+    font-family: $font-suisse-bold
+    font-size: 120px
+    line-height: 110px
+    text-align: center
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: $grey
+    margin: 0 0 150px 0
+    span
+      font-family: $font-wulkan
+  &__info
+    position: relative
+    left: 119px
+    &-top
+      margin: 0 0 120px 0
+      position: relative
+      left: -107px
+    &-bottom
+      position: relative
+      left: -128px
+    &-item
+      display: flex
+      .in
+        white-space: nowrap
+        font-family: $font-suisse-semb
+        font-size: 80px
+        line-height: 102px
+        text-align: center
+        letter-spacing: 0.01em
+        text-transform: uppercase
+        opacity: 0.35
+        -webkit-text-stroke-width: 3.2px
+        -webkit-text-stroke-color: $grey
+        color: transparent
+        margin: 0 41px 0 0
+      .bonus
+        margin: 0 41px 0 0
+        position: relative
+        &__top
+          white-space: nowrap
+          font-family: $font-suisse-semb
+          font-size: 80px
+          line-height: 102px
+          text-align: center
+          letter-spacing: 0.01em
+          text-transform: uppercase
+          color: $grey
+        &__bottom
+          position: absolute
+          bottom: -56px
+          left: 50%
+          transform: translateX(-50%)
+          white-space: nowrap
+          font-family: $font-suisse-semb
+          font-size: 49px
+          line-height: 64px
+          text-align: center
+          letter-spacing: 0.01em
+          text-transform: uppercase
+          color: $grey
+
+
+
+
+
+@media screen and (max-width: 1023px)
+  .wrapper
+    display: none
+  .Layout_column__3MM83
+    width: 100%
